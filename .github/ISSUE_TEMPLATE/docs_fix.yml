@@ -1,0 +1,29 @@
+name: Docs fix
+description: A typo, a broken link, or something unclear or out of date in the docs.
+labels: ["documentation"]
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Page
+      description: Link to the page or the file path.
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What needs fixing?
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested wording
+      description: Optional.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before you submit
+      options:
+        - label: To my knowledge, this contains no personal information and no export-controlled technical data.
+          required: true

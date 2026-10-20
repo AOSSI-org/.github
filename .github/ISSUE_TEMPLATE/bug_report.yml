@@ -1,0 +1,36 @@
+name: Bug report
+description: Something is broken or wrong on an AOSSI site, in a design or in the docs.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. Short and specific is best. Questions go in [Discussions](https://github.com/orgs/AOSSI-org/discussions).
+  - type: textarea
+    id: what
+    attributes:
+      label: What's wrong?
+      description: What happened, and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: where
+    attributes:
+      label: Where?
+      description: A link, file path or page name.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to see it
+      description: Optional. Browser or tool versions help if it's a display or build problem.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before you submit
+      options:
+        - label: I searched open issues and this isn't one of them.
+          required: true
+        - label: To my knowledge, this contains no personal information and no export-controlled technical data.
+          required: true

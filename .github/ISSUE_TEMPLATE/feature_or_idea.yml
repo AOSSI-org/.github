@@ -1,0 +1,34 @@
+name: Feature or idea
+description: Propose something new or a change to how something works.
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Early or open-ended ideas fit better in [Discussions → Ideas](https://github.com/orgs/AOSSI-org/discussions/categories/ideas). Use this form when the idea is concrete enough to work on.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does it solve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What do you propose?
+      description: Keep AOSSI's design priorities in mind.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Other options you considered
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before you submit
+      options:
+        - label: I searched open issues and Discussions for something similar.
+          required: true
+        - label: To my knowledge, this contains no personal information and no export-controlled technical data.
+          required: true
